@@ -1,0 +1,3 @@
+[submodule "solid-attenuator"]
+	path = solid-attenuator
+	url = git@github.com:pcdshub/solid-attenuator
