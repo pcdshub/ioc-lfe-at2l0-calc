@@ -22,10 +22,10 @@ export PYTHON_VERSION=3.7
 export IOC=ioc-lfe-at2l0-calc
 
 # IOC startup command
-export IOC_COMMAND=ioc-lfe-at2l0-calc
+export IOC_COMMAND=ioc-lfe-at2l0-calc --production
 
 # IOC PV prefix.
-export PREFIX=IOC:
+export PREFIX=AT2L0:CALC
 
 # -- Paths and EPICS configuration --
 export IOC_DATA_PATH=/reg/d/iocData/${IOC}
