@@ -2,6 +2,9 @@
 
 . config.sh
 
+git submodule init
+git submodule update --recursive
+
 set -e
 
 conda create --yes --prefix "$PWD/conda_env" python=${PYTHON_VERSION}
