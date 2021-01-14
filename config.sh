@@ -22,7 +22,7 @@ export PYTHON_VERSION=3.7
 export IOC=ioc-lfe-at2l0-calc
 
 # IOC startup command
-export IOC_COMMAND=ioc-lfe-at2l0-calc --production
+export IOC_COMMAND="ioc-lfe-at2l0-calc --production"
 
 # IOC PV prefix.
 export PREFIX=AT2L0:CALC
