@@ -9,6 +9,9 @@ export TOP="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null 2>&1 && pwd )"
 
 # -- Installation --
 # Local packages to install - add your list of submodules here.
+#   A development install (i.e., `pip install -e`) will be used such that your
+#   submodule version synchronization is the primary way to keep your package
+#   up-to-date.
 export PACKAGES=solid-attenuator
 
 # Python version to use for the environment.

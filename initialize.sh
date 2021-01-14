@@ -9,7 +9,7 @@ conda create --yes --prefix "$PWD/conda_env" python=${PYTHON_VERSION}
 
 for pkg in ${PACKAGES}; do
     pushd "$pkg" || exit 1
-    pip install .
+    pip install -e .
     popd || exit 1
 done
 
