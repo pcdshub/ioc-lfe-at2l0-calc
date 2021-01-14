@@ -17,4 +17,8 @@ run_ioc() {
     ${IOC_COMMAND} --prefix "${PREFIX}" --list-pvs
 }
 
-(run_ioc 2>&1) | tee --append $LOG_FILE_PATH
+if [ "${CAPTURE_LOGS}" == "1" ]; then
+    (run_ioc 2>&1) | tee --append $LOG_FILE_PATH
+else
+    run_ioc
+fi

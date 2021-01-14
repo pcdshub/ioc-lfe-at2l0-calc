@@ -29,9 +29,13 @@ export PREFIX=AT2L0:CALC
 
 # -- Paths and EPICS configuration --
 export IOC_DATA_PATH=/reg/d/iocData/${IOC}
-export LOG_FILE_PATH=${IOC_DATA_PATH}/ioc.log
 export CONDA_ENV_PATH="${TOP}/conda_env"
 
 # EPICS address configuration may be necessary:
 export EPICS_CA_AUTO_ADDR_LIST=NO
 export EPICS_CA_ADDR_LIST=172.21.95.255
+
+# If running with IocManager or procServ, independent log file saving will not
+# be necessary.  Set this to 0 if using such a service, or 1 otherwise:
+export CAPTURE_LOGS=0
+export LOG_FILE_PATH=${IOC_DATA_PATH}/iocInfo/ioc.log
