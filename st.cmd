@@ -5,7 +5,7 @@
 source /reg/g/pcds/pyps/conda/pcds_conda
 
 run_ioc() {
-    conda activate $CONDA_ENV_PATH
+    source "${TOP}/activate_env.sh"
     echo ""
     echo "* Running the IOC..."
     set -ex
