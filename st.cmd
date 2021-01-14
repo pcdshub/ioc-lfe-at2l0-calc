@@ -7,10 +7,13 @@ source /reg/g/pcds/pyps/conda/pcds_conda
 run_ioc() {
     source "${TOP}/activate_env.sh"
     echo ""
+    echo "* Version information:"
+    python --version
+    echo "caproto version: $(caproto-get --version)"
+    echo ""
     echo "* Running the IOC..."
     set -ex
     cd ${TOP}
-    python --version
     ${IOC_COMMAND} --prefix "${PREFIX}" --list-pvs
 }
 
