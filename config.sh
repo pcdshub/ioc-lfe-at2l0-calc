@@ -33,7 +33,7 @@ export CONDA_ENV_PATH="${TOP}/conda_env"
 
 # EPICS address configuration may be necessary:
 export EPICS_CA_AUTO_ADDR_LIST=NO
-export EPICS_CA_ADDR_LIST=172.21.95.255
+export EPICS_CA_ADDR_LIST=172.21.91.255
 
 # If running with IocManager or procServ, independent log file saving will not
 # be necessary.  Set this to 0 if using such a service, or 1 otherwise:

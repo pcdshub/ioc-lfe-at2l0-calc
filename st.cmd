@@ -11,6 +11,9 @@ run_ioc() {
     python --version
     echo "caproto version: $(caproto-get --version)"
     echo ""
+    echo "* EPICS settings:"
+    env |grep EPICS_
+    echo ""
     echo "* Running the IOC..."
     set -ex
     cd ${TOP}
